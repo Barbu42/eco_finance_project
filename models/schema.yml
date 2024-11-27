@@ -9,4 +9,6 @@ sources:
       - name: SP500_ESG_2022_700_stocks
         identifier: SP500_2022_Compo_ESG_scoring_700_stocks
       - name: GHG_Emissions
-        identifier: Green_House_Emissions_Yearly_Clean
+        identifier: Green_House_Emissions_Yearly_Clean 
+      - name: cata_nature
+        identifier: cata_nature
