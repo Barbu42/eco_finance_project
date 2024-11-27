@@ -14,3 +14,13 @@ sources:
         identifier: cata_nature
       - name: company_emissions_overview
         identifier: company_emissions_overview
+      - name: all_data_stock
+        identifier: all_data_stock
+      - name: Exxon_Mobil_Full_Stock
+        identifier: Exxon_Mobil_Full_Stock
+      - name: Nextera_Full_Stock
+        identifier: Nextera_Full_Stock
+      - name: All_stocks_history
+        identifier: all_data_stock
+        
+         
