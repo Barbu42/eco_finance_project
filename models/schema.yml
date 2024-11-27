@@ -2,13 +2,12 @@ version: 2
 
 sources:
   - name: eco_finance
+    database: dataset_eco_finance  # Replace with the actual database name
     schema: dataset_eco_finance
     tables:
       - name: co2_per_capita
         identifier: per-capita-co-emissions-cleaned
-      - name: SP500_ESG_2022_700_stocks
+      - name: sp500_esg_2022_700_stocks
         identifier: SP500_2022_Compo_ESG_scoring_700_stocks
-    #  - name: cata_nature_
-    #    identifier:
-      - name: GHG_Emissions
+      - name: ghg_emissions
         identifier: Green_House_Emissions_Yearly_Clean
