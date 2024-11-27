@@ -34,5 +34,26 @@ renamed as (
     from source
 
 )
+--------------------------------------------------
+select      -- colonnes supprimées :exchange, logo, weburl, last_processing_date, cik
 
-select * from renamed
+        ticker,
+        name,
+        currency,
+        industry,
+        environment_grade,
+        environment_level,
+        social_grade,
+        social_level,
+        governance_grade,
+        governance_level,
+        environment_score,
+        social_score,
+        governance_score,
+        total_score,
+        total_grade,
+        total_level,
+        
+
+from renamed
+
