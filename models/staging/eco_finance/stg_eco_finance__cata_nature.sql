@@ -8,7 +8,6 @@
     ,Continent AS continent
     ,`Total Deaths` AS total_deaths
     ,`No Injured` AS nb_injured
-    ,`No Affected` AS nb_affected
     ,`No Homeless` AS nb_homeless
     ,`Total Affected` AS tot_affected
     ,`Reconstruction Costs` AS reconstruction_costs
