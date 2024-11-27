@@ -2,7 +2,7 @@ with
 
 source as (
 
-    select * from {{ source('eco_finance', 'sp500_2022') }}
+    select * from {{ source('eco_finance', 'SP500_ESG_2022_700_stocks') }}
 
 ),
 
