@@ -1,35 +1,27 @@
-with 
-
-source as (
-
-    select * from {{ source('eco_finance', 'cata_nature') }}
-
-),
-
-renamed as (
-
-    select
-        year,
-        disaster group,
-        disaster type,
-        country,
-        iso,
-        region,
-        continent,
-        total deaths,
-        no injured,
-        no affected,
-        no homeless,
-        total affected,
-        reconstruction costs,
-        insured damages,
-        total damages ,
-        start_date,
-        end_date,
-        impact_level
-
-    from source
-
-)
-
-select * from renamed
+    select 
+    Year AS date_year
+    ,`Disaster Group` AS disaster_group
+    ,`Disaster Type` AS disaster_type
+    ,Country AS country
+    ,ISO AS ISO
+    ,Region AS region
+    ,Continent AS continent
+    ,`Total Deaths` AS total_deaths
+    ,`No Injured` AS nb_injured
+    ,`No Homeless` AS nb_homeless
+    ,`Total Affected` AS tot_affected
+    ,`Reconstruction Costs` AS reconstruction_costs
+    ,`Insured Damages` AS insured_damages
+    ,`Total Damages ` AS tot_damages
+    ,CAST(start_date AS date) AS start_date
+    ,CAST(end_date AS date) AS end_date
+    ,CASE
+        WHEN `Total Deaths` > 10000 
+         OR `Total Affected` > 1000000 
+         OR `Total Damages ` > 10e9 THEN 'Global'
+        WHEN `Total Deaths` > 100 
+         OR `Total Affected` > 10000 
+         OR `Total Damages ` > 100e6 THEN 'Regional'
+        ELSE 'Local'
+     END AS impact_level
+     from {{ source('eco_finance', 'cata_nature') }}
