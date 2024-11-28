@@ -9,8 +9,8 @@ source as (
 renamed as (
 
     select
-        ticker,
-        name,
+        UPPER(ticker) AS ticker,
+        LOWER(name) AS name,
         currency,
         exchange,
         industry,
@@ -35,11 +35,10 @@ renamed as (
 
 )
 --------------------------------------------------
-select      -- colonnes supprimées :exchange, logo, weburl, last_processing_date, cik
+select      -- colonnes supprimées :exchange,currency, logo, weburl, last_processing_date, cik
 
         ticker,
         name,
-        currency,
         industry,
         environment_grade,
         environment_level,
