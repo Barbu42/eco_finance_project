@@ -13,14 +13,25 @@ sources:
       - name: cata_nature
         identifier: cata_nature
       - name: company_emissions_overview
-        identifier: company_emissions_overview
+        identifier: eco_finance_co2_final_clean
       - name: all_data_stock
         identifier: all_data_stock
       - name: Exxon_Mobil_Full_Stock
         identifier: Exxon_Mobil_Full_Stock
       - name: Nextera_Full_Stock
         identifier: Nextera_Full_Stock
-      - name: All_stocks_history
-        identifier: all_data_stock
+   #   - name: All_stocks_history
+    #    identifier: all_data_stock
+      - name: nextera_emissions
+        identifier: nextera_emissions
+      - name: nextera_generation_mwh
+        identifier: nextera_generation_mwh
+      - name: nextera_profile_financials
+        identifier: nextera_profile_financials
+      - name: nextera_waste
+        identifier: nextera_waste
+      - name: nextera_water_conso
+        identifier: nextera_water
+      
         
          
