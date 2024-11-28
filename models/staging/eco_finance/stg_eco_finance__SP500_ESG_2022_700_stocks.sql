@@ -13,7 +13,7 @@ renamed as (
         LOWER(name) AS name,
         currency,
         exchange,
-        industry,
+        LOWER(industry) AS industry,
         logo,
         weburl,
         environment_grade,
