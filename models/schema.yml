@@ -32,6 +32,8 @@ sources:
         identifier: nextera_waste
       - name: nextera_water_conso
         identifier: nextera_water
+      - name: big_co2_esg_company_
+        identifier: stg_eco_finance_esg_co2
       
         
          
